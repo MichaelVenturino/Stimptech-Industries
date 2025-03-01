@@ -1,3 +1,4 @@
+/* 
 package com.example.sqch9ex1.Spring.Initialzr;
 
 import org.springframework.jdbc.core.JdbcTemplate;
@@ -15,3 +16,4 @@ public class AccountIDRepository {
 
     public void
 }
+*/
