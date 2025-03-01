@@ -1,0 +1,73 @@
+body {
+    font-family: Arial, sans-serif;
+    color: white;
+    background-color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.card {
+    width: 380px; /* Slightly wider for better spacing */
+    max-width: 90%;
+    padding: 30px; /* More padding inside the card */
+    border: 2px solid white;
+    background-color: #1E3A8A;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* More space between form elements */
+}
+
+span {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px; /* Adds space below labels */
+    font-size: 16px;
+}
+
+input {
+    width: 100%;
+    padding: 12px; /*More padding inside inputs*/
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+input:focus {
+    outline: none;
+    border-color: #2563EB;
+    box-shadow: 0 0 5px rgba(37, 99, 235, 0.5);
+}
+
+button {
+    width: 100%;
+    padding: 14px; /* Increased button padding */
+    background-color: #2563EB;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 18px; /* Slightly larger text for better readability */
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: #1D4ED8;
+}
+
+p {
+    margin-top: 15px; /* More space between the form and message*/
+    font-size: 14px;
+    color: #FFD700; /* Gold text for messages */
+}
