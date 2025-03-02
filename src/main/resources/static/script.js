@@ -3,12 +3,25 @@ const loginForm = document.getElementById("loginForm");
 const registerForm = document.getElementById("registerForm");
 const showRegisterFormLink = document.getElementById("showRegisterForm");
 const showLoginFormLink = document.getElementById("showLoginForm");
+const showLoginForm = document.getElementById("showLoginFormELEMENT");
+const showRegisterForm = document.getElementById("showRegisterFormELEMENT");
 
+/*
+.showLoginForm{
+  display: none;
+}
+
+.showRegisterForm{
+  display: block;
+}
+*/
 // Event listener to show the register form and hide the login form
 showRegisterFormLink.addEventListener("click", function(event) {
   event.preventDefault(); // Prevent default link action
   loginForm.style.display = "none"; // Hide login form
+  //showRegisterForm.style.display = "none"; //Hide "Not Registered?"
   registerForm.style.display = "block"; // Show register form
+  
 });
 
 // Event listener to show the login form and hide the register form
@@ -16,6 +29,7 @@ showLoginFormLink.addEventListener("click", function(event) {
   event.preventDefault(); // Prevent default link action
   registerForm.style.display = "none"; // Hide register form
   loginForm.style.display = "block"; // Show login form
+
 });
 
 // Initial state: login form visible, register form hidden
