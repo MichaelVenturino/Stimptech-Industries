@@ -1,8 +1,47 @@
+/*
+@import url(https://fonts.googleapis.com/css?family=Roboto:300);
+font-family: 'Roboto', sans-serif;
+
+
+@import url(https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;700&display=swap);
+font-family: 'Titillium Web', sans-serif;
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+font-family: 'Bebas Neue', sans-serif;
+
+
+
+*/
+@import url(https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap);
+
 @import url(https://fonts.googleapis.com/css?family=Roboto:300);
 
+@import url(https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;700&display=swap);
+
+/* CSS HEX */
+:root{
+--auburn: #9e2830ff;
+--battleship-gray: #878789ff; 
+--timberwolf: #d5d5d2ff;
+--white: #fdffffff;
+--davys-gray: #4b4947ff;
+--gold-mustard: #E3B448;
+
+ /* Neon Accent Colors */
+--neon-cyan: #00ffff;
+--neon-lime: #39ff14;
+--electric-blue: #007bff;
+--neon-orange: #ff4500;
+--neon-magenta: #ff00ff;
+--neon-yellow: #ffff33;
+}
 /* Apply font family to the entire document */
 body {
-    font-family: "Roboto", sans-serif; 
+    /*font-family: "Roboto", sans-serif; */
+    font-family: 'Roboto', sans-serif;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;      
 }
 
 /* Apply to all elements */
@@ -19,6 +58,17 @@ body {
 
 
 /************* LOGIN AND SIGN UP AREA *****************/
+
+a{
+  text-decoration: none;
+  color: var(--electric-blue);
+  font-weight:500;
+}
+
+a:hover{
+  font-weight: bold;
+}
+
 
 .right{
     position: relative; /* Positions the element relative to its nearest positioned ancestor */
@@ -39,29 +89,43 @@ body {
     width: 560px;
     height: 100vh;
     margin:0%;
-    background: rgb(43,195,34);
-background: linear-gradient(0deg, rgba(43,195,34,1) 0%, rgba(255,255,255,1) 40%);
-box-shadow: 10px 0 20px 0 rgba(0, 0, 0, 0.2), 10px 0 5px 0 rgba(0, 0, 0, 0.24);
+  background: linear-gradient(0deg, var(--neon-orange) 0%, var(--battleship-gray) 40%);
+  box-shadow: 10px 0 20px 0 rgba(0, 0, 0, 0.2), 10px 0 5px 0 rgba(0, 0, 0, 0.24);
 
-
+  display: flex;
+  align-items: center;
 }
 .top-text{
     position: relative;
     top: 40px;
     text-align: center;
     width: 100%;
-
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
+
+.top-text img{
+  width: 80%
+}
+
+
 .form{
     position: relative;
-    margin: 15vh auto 0 auto;
+    margin: 10vh auto 0 auto;
     z-index: 1;
-    background-color: #FFFFFF;
+    background-color: var(--timberwolf);
     max-width: 360px;
-    padding: 45px;
+    padding: 15px 45px;
     text-align: center;
     height: 352px;
     box-shadow: 0 0 20px 0 rgba(0,0,0,0.2),0 5px 5px 0 rgba(0, 0, 0, 0.24);
+    border-radius: 5px;
+}
+
+.form h2{
+  font-family: 'Titillium Web', sans-serif;
 }
 
 .form input{
@@ -77,7 +141,7 @@ box-shadow: 10px 0 20px 0 rgba(0, 0, 0, 0.2), 10px 0 5px 0 rgba(0, 0, 0, 0.24);
 .form button{
     text-transform: uppercase;
     outline: 0;
-    background-color: #4CAF50;
+    background-color: var(--neon-orange);
     width: 100%;
     border: 0;
     padding: 15px;
@@ -89,13 +153,13 @@ box-shadow: 10px 0 20px 0 rgba(0, 0, 0, 0.2), 10px 0 5px 0 rgba(0, 0, 0, 0.24);
 }
 
 .form button:hover,.form button:active,.form button:focus {
-    background: #43A047;
+    background: var(--auburn);
 }
 
-.form .message {
+.message {
     margin: 15px 0 0;
     color: #b3b3b3;
-    font-size: 12px;
+    font-size: 18px;
 }
 
 .form .message a {
@@ -140,10 +204,5 @@ box-shadow: 10px 0 20px 0 rgba(0, 0, 0, 0.2), 10px 0 5px 0 rgba(0, 0, 0, 0.24);
     color: #EF3B3A;
   }
   body {
-    background: #76b852; /* fallback for old browsers */
-    background: rgb(141,194,111);
-    background: linear-gradient(90deg, rgba(141,194,111,1) 0%, rgba(118,184,82,1) 50%);
-    font-family: "Roboto", sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;      
+
   }
