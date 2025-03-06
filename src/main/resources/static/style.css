@@ -80,7 +80,7 @@ body {
     height: 100vh;
     margin:0%;
   background: linear-gradient(0deg, var(--neon-orange) 0%, var(--battleship-gray) 40%);
-  box-shadow: 10px 0 20px 0 rgba(0, 0, 0, 0.2), 10px 0 5px 0 rgba(0, 0, 0, 0.24);
+
 
   display: flex;
   align-items: center;
@@ -117,11 +117,7 @@ body {
     box-shadow: 0 0 20px 0 rgba(0,0,0,0.2),0 5px 5px 0 rgba(0, 0, 0, 0.24);
     border-radius: 5px;
 }
-@media screen and (max-height: 700px) {
-  .form {
-      height: 300px; /* New height when viewport height is below 700px */
-  }
-}
+
 
 .form h2{
   font-family: 'Titillium Web', sans-serif;
@@ -209,5 +205,58 @@ body {
   }
  
 
+/*---------------------------------------------MEDIA QUERIES--------------------------*/
+
+@media screen and (max-height: 700px) {
+  .form {
+      height: 300px; /* New height when viewport height is below 700px */
+    }
+  }
+
+/*Mobile*/
+
+@media screen and (max-width: 768px) {
+  .login-page {
+    width: 100vw;
+    max-width: none;
+    height: 100vh;
+    background: linear-gradient(180deg, var(--battleship-gray) 70%, var(--neon-orange) 100%);
+    background: 
+    linear-gradient(180deg, rgba(135, 135, 137, 0.8) 70%, rgba(255, 69, 0, 0.8) 100%), 
+    url('https://images.unsplash.com/photo-1496247749665-49cf5b1022e9?q=80&w=2073&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
 
 
+  .top-text img {
+    width: 60%;
+    opacity: 70%;
+    background: rgba(135, 135, 137, 0.8); 
+    padding: 10px;
+    border-radius: 5px;
+    mask-image: radial-gradient(ellipse at center, 
+        rgba(0, 0, 0, 1) 60%, 
+        rgba(0, 0, 0, 0.8) 75%, 
+        rgba(0, 0, 0, 0) 100%
+    );
+}
+
+  .form {
+    max-width: 90%;
+    padding: 10px;
+
+  }
+  
+  .top-text img {
+    width: 60%; /* Reduce logo size on small screens */
+  }
+
+  .right{
+    display: none;
+    margin: 0;
+    padding: 0;
+
+  }
+}
