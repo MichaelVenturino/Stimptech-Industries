@@ -1,35 +1,31 @@
 // Get elements
 const loginForm = document.getElementById("loginForm");
 const registerForm = document.getElementById("registerForm");
-const showRegisterFormLink = document.getElementById("showRegisterForm");
-const showLoginFormLink = document.getElementById("showLoginForm");
-const showLoginForm = document.getElementById("showLoginFormELEMENT");
-const showRegisterForm = document.getElementById("showRegisterFormELEMENT");
+const signInBanner = document.getElementById("sign-in-banner");
+const loginToggle = document.getElementById("loginToggle");
 
-/*
-.showLoginForm{
-  display: none;
-}
+// Initial toggle content
+window.onload = () => {
+  loginToggle.innerHTML = `<p class="message">Not registered? <a href="#" id="showRegisterForm">Create an account</a></p>`;
+};
 
-.showRegisterForm{
-  display: block;
-}
-*/
-// Event listener to show the register form and hide the login form
-showRegisterFormLink.addEventListener("click", function(event) {
+// Event delegation for toggling forms
+loginToggle.addEventListener("click", function(event) {
   event.preventDefault(); // Prevent default link action
-  loginForm.style.display = "none"; // Hide login form
-  //showRegisterForm.style.display = "none"; //Hide "Not Registered?"
-  registerForm.style.display = "block"; // Show register form
-  
-});
 
-// Event listener to show the login form and hide the register form
-showLoginFormLink.addEventListener("click", function(event) {
-  event.preventDefault(); // Prevent default link action
-  registerForm.style.display = "none"; // Hide register form
-  loginForm.style.display = "block"; // Show login form
-
+  if (event.target.id === "showRegisterForm") {
+    // Show Register Form, Hide Login Form
+    loginToggle.innerHTML = `<p class="message">Already registered? <a href="#" id="showLoginForm">Sign In</a></p>`;
+    signInBanner.innerText = "Welcome To StimpTech!";
+    loginForm.style.display = "none"; 
+    registerForm.style.display = "block"; 
+  } else if (event.target.id === "showLoginForm") {
+    // Show Login Form, Hide Register Form
+    loginToggle.innerHTML = `<p class="message">Not registered? <a href="#" id="showRegisterForm">Create an account</a></p>`;
+    signInBanner.innerText = "Sign In To Your Account";
+    registerForm.style.display = "none";
+    loginForm.style.display = "block";
+  }
 });
 
 // Initial state: login form visible, register form hidden

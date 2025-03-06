@@ -25,11 +25,8 @@
 </div>
 
       <div class="form">
-        <h2>Sign In To Your Mom</h2>
-        <br>
-        <br>
+        <h2 id="sign-in-banner">Sign In To Your Account</h2>
         <form class="register-form" id="registerForm" action="/" method="post">
-
           <input type="text" placeholder="name"/>
           <input type="password" placeholder="password"/>
           <input type="text" placeholder="email address"/>
@@ -45,8 +42,10 @@
         
       </div>
       <br>
-      <p class="message">Not registered? <a href="#" id="showRegisterForm">Create an account</a></p>
-      <p class="message">Already registered? <a href="#" id="showLoginForm">Sign In</a></p>
+      <div id="loginToggle">
+
+      </div>
+
 </div>
 
 <div class="right">
@@ -54,7 +53,6 @@
 </div>
 
 <p th:text="${message}"></p>
-<!--<script src="../static/script.js"></script>-->
 <script src="script.js"></script>
 </body>
 </html>

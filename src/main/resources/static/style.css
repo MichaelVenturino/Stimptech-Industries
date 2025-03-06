@@ -59,16 +59,6 @@ body {
 
 /************* LOGIN AND SIGN UP AREA *****************/
 
-a{
-  text-decoration: none;
-  color: var(--electric-blue);
-  font-weight:500;
-}
-
-a:hover{
-  font-weight: bold;
-}
-
 
 .right{
     position: relative; /* Positions the element relative to its nearest positioned ancestor */
@@ -112,6 +102,10 @@ a:hover{
 
 
 .form{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
     position: relative;
     margin: 10vh auto 0 auto;
     z-index: 1;
@@ -122,6 +116,11 @@ a:hover{
     height: 352px;
     box-shadow: 0 0 20px 0 rgba(0,0,0,0.2),0 5px 5px 0 rgba(0, 0, 0, 0.24);
     border-radius: 5px;
+}
+@media screen and (max-height: 700px) {
+  .form {
+      height: 300px; /* New height when viewport height is below 700px */
+  }
 }
 
 .form h2{
@@ -157,15 +156,20 @@ a:hover{
 }
 
 .message {
-    margin: 15px 0 0;
-    color: #b3b3b3;
-    font-size: 18px;
+    color: var(--davys-gray);
+    font-size: 16px;
+    font-family: 'Titillium Web', sans-serif;
 }
 
-.form .message a {
-    color: #4CAF50;
-    text-decoration: none;
-  }
+.message a{
+  text-decoration: none;
+  color: var(--neon-yellow);
+  font-weight:500;
+}
+
+.message a:hover{
+  font-weight: bold;
+}
 
   .form .register-form {
     display: none;
@@ -203,6 +207,7 @@ a:hover{
   .container .info span .fa {
     color: #EF3B3A;
   }
-  body {
+ 
 
-  }
+
+
