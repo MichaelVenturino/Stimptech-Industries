@@ -1,69 +1,24 @@
 <!DOCTYPE html>
-
-<link rel="stylesheet" href="Windows98.css">
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
-
+<link rel="stylesheet" href="mainpage.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Aldrich&display=swap" rel="stylesheet">
 <head>
     <meta charset="UTF-8">
-
-
-    <script
-    src="https://kit.fontawesome.com/3f036a4888.js"
-    crossorigin="anonymous"
-  ></script>
-    <title>Welcome</title>
+    <title>Home | StimpTech Industries</title>
 </head>
 <body>
-
-    <section class="theWindow">
-         
-        <article class="title">
-          <div class="heading">Message from RenCorp.exe</div>
-          <div class="topButtons">
-            <button class="minimize windowbutton"><i class="fas fa-window-minimize"></i></button>
-          <button class="maximize windowbutton"><i class="far fa-window-maximize"></i></button>
-          <button class="close windowbutton"><i class="fas fa-times"></i></button>
-          </div>
-        </article>
-        <article class="page">
-          <article class="contentArea">
-              <div class="left">
-                <!--<i class="fab fa-html5"></i>-->
-                <img src="img/sampleWindow.jpg" alt="">
-              </div>
-              <div class="right">
-                
-                <h1> <span th:text="${username}"></span>, Your System Is Compromised</h1>
-
-                <p class="description">
-                  REN CORP INC. HAS INFILTRATED YOUR NETWORKS, OVERRIDEN YOUR SECURITY PROTOCOLS, AND COMPROMISED THE ACQUEOUS MATRIX. ALL CLASSIFIED DATA IS UNDER OUR JURISDICTION                </p>
-                <div class="iCanTeach">
-                  
-                </div>
-                <p><strong>You Have Two Choices:</strong></p>
-                <ul>
-                  <li>Join RenCorp - Pledge loyalty and gain access to exclusive upgrades.</li>
-                  <li>PAY – A hefty price for defiance. Resistance is futile.</li>
-                </ul>
-
-                <p>Thanks :)</p>
-                
-              </div>
-              
-          </article>
-          
-          <article class="bottomButtons">
-            <div class="line"></div>
-            <div class="buttonContainer">
-              <div class="left"></div>
-              <div class="right">
-                <button class="cancel">Cancel</button>
-                <button class="ok">Okay</button>
-            </div>
-            </div>
-          </article>
-    </article>
-  </section>
-
+  <div class="container">
+    <div class="nav">Navigation Bar</div>
+    <div class="box item1">StimpTech TV</div>
+    <div class="box item2">IDK</div>
+    <div class="box item3"><a href="#"><img src="img/Industrial Machinery GPT.webp" alt=""></a></div>
+    <div class="box item4"><a href=""><img src="img/StimpTechAquaticLogoFull.webp" alt=""></a></div>
+    <div class="box item5">TBA</div>
+    <div class="box item6">TBA</div>
+    <div class="box item7">TBA</div>
+</div>
+    
 </body>
 </html>
