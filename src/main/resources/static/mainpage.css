@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Aldrich&display=swap');
+/*
+font-family: "Aldrich", sans-serif;
+font-weight: 400;
+font-style: normal;
+*/
+
+/* CSS HEX */
+:root{
+    --auburn: #9e2830ff;
+    --battleship-gray: #878789ff; 
+    --timberwolf: #d5d5d2ff;
+    --white: #fdffffff;
+    --davys-gray: #4b4947ff;
+    --gold-mustard: #E3B448;
+    
+     /* Neon Accent Colors */
+    --neon-cyan: #00ffff;
+    --neon-lime: #39ff14;
+    --electric-blue: #007bff;
+    --neon-orange: #ff4500;
+    --neon-magenta: #ff00ff;
+    --neon-yellow: #ffff33;
+    }
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Aldrich", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100vh;
+    background-color: var(--davys-gray);
+    height: 3000px;
+}
+
+.container {
+    width: 100vw;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto repeat(4, 1fr);
+    gap: 10px;
+}
+
+.nav {
+    grid-column: 1 / -1;
+    background-color: black;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    border-radius: 8px;
+}
+
+.box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px dashed black;
+    background-color: rgba(255, 0, 0, 0.1);
+    font-size: 1.2em;
+    font-weight: bold;
+    color: red;
+    text-align: center;
+    min-height: 25vh;
+}
+
+.box img{
+    max-width: 100%;  /* Image will never exceed the parent's width */
+    max-height: 100%; /* Image will never exceed the parent's height */
+    width: auto;      /* Maintain original aspect ratio */
+    height: auto;
+    display: block;   /* Removes extra spacing below inline images */
+}
+/* StimpTech TV */
+
+.item1 { 
+
+    grid-column: span 2; 
+    grid-row: span 2;
+    background: linear-gradient(rgba(50, 50, 50, 0.6), rgba(50, 50, 50, 0.6)), url(img/chris-hodgson-sci-fi-retro-screen-wall-render-01.jpg);
+    background-size: cover; /* Ensures the image covers the div */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+} 
+.item2 { 
+    grid-column: span 2;
+    grid-row: span 1; 
+
+} /* Something else */
+.item3 { 
+    grid-column: span 1; 
+
+} /* Machinery */
+.item4 { 
+    grid-column: span 1; 
+
+} /* Aquatic Research */
+.item5 { 
+    grid-column: span 4; 
+    grid-row: span 12;
+} /* Something else */
+.item6 { 
+    grid-column: span 1; 
+
+} /* Machinery */
+.item7 { 
+    grid-column: span 1; 
+
+} /* Aquatic Research */
