@@ -52,6 +52,8 @@ body {
 }
 
 .nav {
+    position: relative;
+    z-index: 10;
     grid-column: 1 / -1;
     background-color: black;
     color: white;
@@ -65,12 +67,18 @@ body {
     align-items: center;
     justify-content: center;
     border: 2px dashed black;
-    background-color: rgba(255, 0, 0, 0.1);
     font-size: 1.2em;
     font-weight: bold;
     color: red;
     text-align: center;
     min-height: 25vh;
+    padding: 2rem;
+    background-color: #282828;
+    /*Border Styling for interface*/ 
+    border-radius: 5px;
+    box-shadow: 0 0 20px var(--timberwolf), 0 0 40px var(--davys-gray),
+    0 0 60px var(--auburn);
+    transition: box-shadow 0.3s;
 }
 
 .box img{
